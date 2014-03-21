@@ -5,25 +5,10 @@ Ext.define('OC.view.mtree.Tree', {
     title: 'Obj tree',
     width: 200,
 
+    store: 'ExampleDataStore',
+
     initComponent: function() {
-        this.store = {
-            root: {
-                    text: 'Root',
-                    expanded: true,
-                    children: 
-                    [
-                        { text: '2013-11-10', leaf: true },
-                        { text: '2013-11-08', leaf: true },
-                        { text: '2013-11-02', leaf: true },
-                        { text: '2013-11-10', leaf: true },
-                        { text: '2013-11-08', leaf: true },
-                        { text: '2013-11-02', leaf: true },
-                        { text: '2013-11-10', leaf: true },
-                        { text: '2013-11-08', leaf: true },
-                        { text: '2013-11-02', leaf: true }
-                    ]
-                }
-        };
+
         this.callParent(arguments);
     }
 });
