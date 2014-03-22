@@ -25,7 +25,7 @@ Ext.define('OC.view.mtree.Chart', {
     series: [{
         type: 'bar',
         axis: 'bottom',
-        highlight: true,
+        highlight: false, // True is bugged
         tips: {
           trackMouse: true,
           width: 140,
